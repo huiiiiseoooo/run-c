@@ -1,0 +1,120 @@
+> Task :compileJava
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-07-08T02:50:38.845+09:00  INFO 25016 --- [jbnusw] [           main] runc.jbnusw.JbnuswApplication            : Starting JbnuswApplication using Java 17.0.12 with PID 25016 (C:\Users\±è¼¼Àº\run-c\backend\build\classes\java\main started by ±è¼¼Àº in C:\Users\±è¼¼Àº\run-c\backend)
+2026-07-08T02:50:38.867+09:00  INFO 25016 --- [jbnusw] [           main] runc.jbnusw.JbnuswApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-07-08T02:50:41.971+09:00  INFO 25016 --- [jbnusw] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-08T02:50:42.295+09:00  INFO 25016 --- [jbnusw] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 265 ms. Found 1 JPA repository interface.
+2026-07-08T02:50:45.203+09:00  INFO 25016 --- [jbnusw] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-08T02:50:45.286+09:00  INFO 25016 --- [jbnusw] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-08T02:50:45.287+09:00  INFO 25016 --- [jbnusw] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-08T02:50:45.813+09:00  INFO 25016 --- [jbnusw] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 6712 ms
+2026-07-08T02:52:54.489+09:00  INFO 25016 --- [jbnusw] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-08T02:52:54.944+09:00  INFO 25016 --- [jbnusw] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-08T02:53:09.123+09:00  INFO 25016 --- [jbnusw] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-08T02:53:09.467+09:00  INFO 25016 --- [jbnusw] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-08T02:53:10.584+09:00  INFO 25016 --- [jbnusw] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1242d96b
+2026-07-08T02:53:10.594+09:00  INFO 25016 --- [jbnusw] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-08T02:53:11.070+09:00  INFO 25016 --- [jbnusw] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/runC]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.10
+	Default catalog/schema: runC/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-08T02:53:15.908+09:00  INFO 25016 --- [jbnusw] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-08T02:53:16.220+09:00  INFO 25016 --- [jbnusw] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-08T02:53:16.577+09:00  INFO 25016 --- [jbnusw] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-08T02:53:19.287+09:00  INFO 25016 --- [jbnusw] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-08T02:53:19.309+09:00  INFO 25016 --- [jbnusw] [           main] runc.jbnusw.JbnuswApplication            : Started JbnuswApplication in 163.21 seconds (process running for 164.885)
+2026-07-08T02:54:00.853+09:00  INFO 25016 --- [jbnusw] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-08T02:54:00.854+09:00  INFO 25016 --- [jbnusw] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-08T02:54:00.860+09:00  INFO 25016 --- [jbnusw] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: 
+    select
+        u1_0.user_id 
+    from
+        users u1_0 
+    where
+        u1_0.login_id=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        users
+        (username, created_at, name, password_hash, password, login_id, nickname) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.user_id,
+        u1_0.username,
+        u1_0.created_at,
+        u1_0.name,
+        u1_0.password_hash,
+        u1_0.password,
+        u1_0.login_id,
+        u1_0.nickname 
+    from
+        users u1_0 
+    where
+        u1_0.login_id=?
+2026-07-08T02:54:32.225+09:00  WARN 25016 --- [jbnusw] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s502ms542?s400ns).
+Hibernate: 
+    select
+        u1_0.user_id 
+    from
+        users u1_0 
+    where
+        u1_0.login_id=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.user_id 
+    from
+        users u1_0 
+    where
+        u1_0.login_id=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        users
+        (username, created_at, name, password_hash, password, login_id, nickname) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.user_id,
+        u1_0.username,
+        u1_0.created_at,
+        u1_0.name,
+        u1_0.password_hash,
+        u1_0.password,
+        u1_0.login_id,
+        u1_0.nickname 
+    from
+        users u1_0 
+    where
+        u1_0.login_id=?

@@ -1,0 +1,164 @@
+.auth-container,
+.home {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  background: #f6f7fb;
+}
+
+.auth-box,
+.home-panel {
+  width: min(100%, 420px);
+  padding: 32px;
+  border: 1px solid #dfe3ea;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.08);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.auth-box h1,
+.home-panel h1 {
+  margin: 0 0 24px;
+  color: #111827;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.home-description {
+  margin: 0 0 24px;
+  color: #4b5563;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-group input {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #111827;
+  background: #ffffff;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 15px;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  outline: 3px solid rgba(37, 99, 235, 0.15);
+}
+
+.input-with-button {
+  display: grid;
+  grid-template-columns: 1fr 104px;
+  gap: 8px;
+}
+
+.submit-btn,
+.primary-action,
+.check-btn {
+  height: 44px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.submit-btn,
+.primary-action {
+  width: 100%;
+  margin-top: 8px;
+  color: #ffffff;
+  background: #2563eb;
+}
+
+.check-btn {
+  color: #1f2937;
+  background: #e5e7eb;
+}
+
+.submit-btn:disabled,
+.check-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.switch-link {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0 0;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.switch-link button {
+  border: 0;
+  padding: 0;
+  color: #2563eb;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.error-message,
+.success-message {
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.error-message {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.success-message {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.success-text {
+  color: #166534;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .auth-box,
+  .home-panel {
+    padding: 24px;
+  }
+
+  .input-with-button {
+    grid-template-columns: 1fr;
+  }
+}
